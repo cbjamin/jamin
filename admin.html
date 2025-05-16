@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Login - CyberGuard Jamin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>Admin Login</h2>
+  <div id="loginBox">
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="adminPanel" style="display:none;">
+    <h3>Post Something</h3>
+    <textarea id="postText" rows="4" cols="50" placeholder="Write something..."></textarea><br>
+    <button onclick="postContent()">Post</button>
+    <div id="postsList"></div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
